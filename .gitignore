@@ -1,6 +1,6 @@
 *.sketch
 *.fig
 *.xd
-*.mds
+*.md
 .DS_Store
 .prettierignore
