@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lexend+Deca:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Inter:wght@500&family=Lexend+Deca:wght@300&display=swap");
+@use "colors";
+@use "sizes";
+@use "fonts";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #090b1a;
+}
+
+.banner-content {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  padding: 64px;
+  max-width: 412px;
+  max-height: 382px;
+  background-color: #1b1938;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.banner-content__paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-bottom: 76px;
+}
+
+.banner-content__title {
+  margin-bottom: 32px;
+}
+
+.banner-image {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  min-width: 540px;
+  max-width: 540px;
+  min-height: 446px;
+  max-height: 446px;
+  background-image: url("../../images/image-header-desktop.jpg");
+  background-color: #aa5cdb;
+  background-blend-mode: multiply;
+}
+
+.banner-content__word {
+  color: #aa5cdb;
+}
+
+.banner-content__description-market-value {
+  margin-right: auto;
+}
+
+.banner-content__description-value-desc {
+  margin-top: 4px;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1045px) {
+  .page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .banner-content__title {
+    margin-bottom: 16px;
+  }
+  .banner-image {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    background-image: url("../../images/image-header-mobile.jpg");
+    background-size: cover;
+    min-width: 280px;
+    min-height: 200px;
+    max-width: 280px;
+    max-height: 200px;
+    background-color: #aa5cdb;
+    background-blend-mode: multiply;
+  }
+  .banner-content {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    padding: 32px;
+    max-width: 216px;
+    max-height: 600px;
+    background-color: #1b1938;
+  }
+  .banner-content__descriptions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-content__description-market-value {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .banner-content__paragraph {
+    margin-bottom: 32px;
+  }
+  .banner-content__description-value {
+    font-size: 1.5rem;
+  }
+}
+
+@use "values";
+.page--size {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.display--center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */

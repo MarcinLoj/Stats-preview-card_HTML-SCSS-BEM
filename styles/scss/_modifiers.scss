@@ -1,0 +1,14 @@
+@use "values";
+
+.page--size {
+    min-width: 100%;
+    min-height: 100%;
+}
+.display--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display--flex {
+    display: flex;
+}

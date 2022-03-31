@@ -1,0 +1,101 @@
+@use "colors";
+@use "sizes";
+@use "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: $very-dark-blue;
+}
+.banner-content {
+    @include font-lexend-deca;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-lg;
+    color: $white;
+    padding: 64px;
+    max-width: 412px;
+    max-height: 382px;
+    background-color: $dark-desatured-blue;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.banner-content__paragraph {
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+    opacity: 0.5;
+    margin-bottom: 76px;
+}
+.banner-content__title {
+    margin-bottom: 32px;
+}
+.banner-image {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    min-width: 540px;
+    max-width: 540px;
+    min-height: 446px;
+    max-height: 446px;
+    background-image: url("../../images/image-header-desktop.jpg");
+    background-color: $soft-violet;
+    background-blend-mode: multiply;
+}
+.banner-content__word {
+    color: $soft-violet
+}
+.banner-content__description-market-value {
+    margin-right: auto;
+}
+.banner-content__description-value-desc {
+    margin-top: 4px;
+    font-size: $font-size-vsm;
+    font-weight: $font-weight-md;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1045px) {
+    .page {
+        flex-direction: column-reverse;
+    }
+    .banner-content__title {
+        margin-bottom: 16px;
+    }
+    .banner-image {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 8px;
+        background-image: url("../../images/image-header-mobile.jpg");
+        background-size: cover;
+        min-width: 280px;
+        min-height: 200px;
+        max-width: 280px;
+        max-height: 200px;
+        background-color: $soft-violet;
+        background-blend-mode: multiply;
+    }
+    .banner-content {
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 8px;
+        font-size: $font-size-md;
+        text-align: center;
+        padding: 32px;
+        max-width: 216px;
+        max-height: 600px;
+        background-color: $dark-desatured-blue
+    }
+    .banner-content__descriptions {
+        flex-direction: column;
+    }
+    .banner-content__description-market-value {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .banner-content__paragraph {
+        margin-bottom: 32px;
+    }
+    .banner-content__description-value {
+        font-size: $font-size-lg;
+    }
+}
