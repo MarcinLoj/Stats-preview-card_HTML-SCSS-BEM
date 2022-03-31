@@ -20,15 +20,35 @@ html {
     background-color: $dark-desatured-blue;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-}
-.banner-content__paragraph {
-    font-size: $font-size-md;
-    font-weight: $font-weight-md;
-    opacity: 0.5;
-    margin-bottom: 76px;
-}
-.banner-content__title {
-    margin-bottom: 32px;
+
+
+    &__paragraph {
+        font-size: $font-size-md;
+        font-weight: $font-weight-md;
+        opacity: 0.5;
+        margin-bottom: 76px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__word {
+        color: $soft-violet
+    }
+
+    &__description-market-value {
+        margin-right: auto;
+    }
+
+    &__description-value-desc {
+        margin-top: 4px;
+        font-size: $font-size-vsm;
+        font-weight: $font-weight-md;
+        letter-spacing: 1px;
+        opacity: 0.6;
+        text-transform: uppercase;
+    }
 }
 .banner-image {
     border-top-right-radius: 8px;
@@ -40,20 +60,6 @@ html {
     background-image: url("../../images/image-header-desktop.jpg");
     background-color: $soft-violet;
     background-blend-mode: multiply;
-}
-.banner-content__word {
-    color: $soft-violet
-}
-.banner-content__description-market-value {
-    margin-right: auto;
-}
-.banner-content__description-value-desc {
-    margin-top: 4px;
-    font-size: $font-size-vsm;
-    font-weight: $font-weight-md;
-    letter-spacing: 1px;
-    opacity: 0.6;
-    text-transform: uppercase;
 }
 
 @media (max-width: 1045px) {
@@ -83,19 +89,23 @@ html {
         padding: 32px;
         max-width: 216px;
         max-height: 600px;
-        background-color: $dark-desatured-blue
-    }
-    .banner-content__descriptions {
-        flex-direction: column;
-    }
-    .banner-content__description-market-value {
-        margin-right: 0;
-        margin-bottom: 24px;
-    }
-    .banner-content__paragraph {
-        margin-bottom: 32px;
-    }
-    .banner-content__description-value {
-        font-size: $font-size-lg;
+        background-color: $dark-desatured-blue;
+
+        &__descriptions {
+            flex-direction: column;
+        }
+
+        &__description-market-value {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+
+        &__paragraph {
+            margin-bottom: 32px;
+        }
+
+        &__description-value {
+            font-size: $font-size-lg;
+        }
     }
 }
